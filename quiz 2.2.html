@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuis Praktikum: Form Pemesanan Service</title>
+</head>
+<body>
+
+    <p>
+        Nama:Yazid Aldin<br>
+        Nim: E030425077
+    </p>
+
+    <hr>
+
+    <h2>Kuis Praktikum: Form Pemesanan Service</h2>
+
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="nama">Nama Pelanggan:</label></td>
+                <td><input type="text" id="nama" name="nama" placeholder="Masukkan Nama"></td>
+            </tr>
+            <tr>
+                <td><label for="kategori">Kategori Layanan:</label></td>
+                <td>
+                    <select id="kategori" name="kategori">
+                        <option value="web">Web Development</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Metode Pembayaran:</label></td>
+                <td>
+                    <input type="radio" id="transfer_bank" name="metode_pembayaran" value="transfer_bank" checked>
+                    <label for="transfer_bank">Transfer Bank</label>
+
+                    <input type="radio" id="ewallet" name="metode_pembayaran" value="ewallet">
+                    <label for="ewallet">E-Wallet</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Kirim Form</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
