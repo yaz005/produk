@@ -1,0 +1,101 @@
+/* 1.CSS VARIABLES */
+:root {
+    --primary-color: #008080;
+    --primary-dark:#005A5A;
+    --accent-color:#FF9800;
+    --secondary-color:#1A252C;
+    --bg-light: #F4F7F6;
+    --white:#FFFFFF;
+    --text-muted:#666666;
+    --border-color:#E0E0E0;
+    --shadow-soft: 0 4px 12px rgba(0,0,0, 0.08);
+    --shadow-hover: 0 8x 24x rgba(0,0,0, 0.15);
+    --transition-fast: all 0.3s ease;
+
+}
+
+/* 2.CSS RESET & GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1,6;
+    color: var (--secondary-color);
+    background-color: var(--bg-color);
+}
+
+
+
+/* 3. LAYOUT CONTAINER */
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* 4.HEADER & NAVIGASI */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 15px;
+} 
+
+
+nav a {
+    color:var(--white);
+    text-decoration: none;
+    padding: 6px 14px;
+    margin: 0 2px;
+    border-radius: 4px;
+    transition: var(--transition-fast);
+}
+
+nav a:hover, nav a.active {
+    background-color: rgba(255,255,255, 0.25);
+    font-weight: bold;
+}
+
+/* 5. MAIN CONTENT */
+
+main {
+    padding: 40px 0;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+
+.section-title{
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.section-subtitle{
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
